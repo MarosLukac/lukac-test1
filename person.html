@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Person list</title>
+ 
+</head>
+
+<body>
+
+<main>
+    <form>
+        <label>New person name:
+            <input type="text" id="nameInNewPerson" placeholder="Name Surname"/>
+        </label>
+        <label>New person age:
+                <input type="number" id="ageInNewPerson" placeholder="Age"/>
+        </label>
+        <label>New person sex:
+                <input type="text" id="sexInNewPerson" placeholder="Male"/>
+        </label>
+
+        <button type="button" id="btAddPerson" onclick="addPerson()">Add Person</button>
+
+        <br /> <br />
+
+        <label>Person id: 
+            <input type="text" id="inPersonIdEdt"  placeholder="id of the person to edit"/>
+        </label>
+
+        <label>New name: 
+                <input type="text" id="nameInPersonIdEdt"  placeholder="Name of the person to edit"/>
+        </label>
+
+        <label>New age: 
+                <input type="number" id="ageInPersonIdEdt"  placeholder="Age of the person to edit"/>
+        </label>
+        <label>New sex: 
+                <input type="text" id="sexInPersonIdEdt"  placeholder="Sex of the person to edit"/>
+        </label>
+
+        <button type="button"  id="btEdtPerson" onclick="editPerson()">Edit  person</button>
+        
+        <br /> <br />
+
+        
+        <label>Person id:
+                <input type="text" id="inPersonIdRem"  placeholder="id of the person to remove"/>
+        </label>
+        <button type="button"  id="btRemPerson" onclick="deletePerson()">Delete person</button>
+        
+        <br /> <br />
+
+
+        <button type="button"  id="btGetAllPersons" onclick="getPersons()">Get all persons</button>
+
+        <br /> <br />
+
+        <div id="person-list"></div>
+
+
+
+
+
+        <textarea id="tareaResponse" cols="200" rows="30"></textarea>
+    </form>
+ 
+</main>
+
+
+
+<!-- Vlozenie skriptu pre tuto stranku  -->
+<script src="person.js"></script>
+
+
+</body>
+</html>
